@@ -194,12 +194,7 @@ export const SessionDialog = ({ navigation }) => {
             justifyContent: "flex-end",
           }}
         >
-          <Button
-            textColor="black"
-            mode="outlined"
-            onPress={onBack}
-            style={{ marginRight: 8 }}
-          >
+          <Button mode="outlined" onPress={onBack} style={{ marginRight: 8 }}>
             {currentStep === 0 ? "Close" : "Back"}
           </Button>
 

@@ -8,7 +8,7 @@ import { getFirestore } from "firebase/firestore";
 // Your web app's Firebase configuration
 // For Firebase JS SDK v7.20.0 and later, measurementId is optional
 const firebaseConfig = {
-  apiKey: "AIzaSyD6sfQInpW8y4W28wiGE0H7-wmRZGN40qE",
+  apiKey: process.env.REACT_APP_API_KEY,
   authDomain: "react-gym-tracker-app.firebaseapp.com",
   projectId: "react-gym-tracker-app",
   storageBucket: "react-gym-tracker-app.appspot.com",
