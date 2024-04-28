@@ -197,7 +197,9 @@ export const ProgramScreen = () => {
       <Stack.Screen
         name="AddPlan"
         component={AddPlan}
-        options={{ title: "My programs" }}
+        options={{
+          title: "My programs",
+        }}
       />
       <Stack.Screen
         name="SessionItem"
