@@ -1,5 +1,5 @@
 import { View } from "react-native"
-import { Button } from "react-native-paper"
+import { Button, IconButton, MD3Colors } from "react-native-paper"
 import { FormProvider, useFieldArray, useFormContext } from "react-hook-form"
 import { SessionFormT } from "./SessionDialog"
 import TextInputController from "./TextInputController"
@@ -22,22 +22,9 @@ export const ExcersiceItem = () => {
           display: "flex",
           flexDirection: "column",
           flex: 1,
-          width: "100%",
           padding: 16,
         }}
       >
-        <View
-          style={{
-            display: "flex",
-            justifyContent: "flex-start",
-            marginBottom: 16,
-            width: "100%",
-          }}
-        >
-          <Button mode="contained" icon="plus" onPress={onAppendExcersice}>
-            Add
-          </Button>
-        </View>
         {fields.map((field, index) => (
           <View
             key={field.id}
@@ -78,6 +65,15 @@ export const ExcersiceItem = () => {
             />
           </View>
         ))}
+        <View
+          style={{
+            display: "flex",
+            alignItems: "center",
+            marginTop: 16,
+          }}
+        >
+          <IconButton mode="outlined" icon="plus" onPress={onAppendExcersice} />
+        </View>
       </View>
     </FormProvider>
   )
