@@ -1,11 +1,12 @@
 {
   "expo": {
-    "name": "xstate-native-app",
-    "slug": "xstate-native-app",
+    "name": "react-native-gym-tracker-app",
+    "slug": "react-native-gym-tracker-app",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
     "userInterfaceStyle": "light",
+    "scheme": "xstate-native-scheme",
     "splash": {
       "image": "./assets/splash.png",
       "resizeMode": "contain",
@@ -15,7 +16,8 @@
       "**/*"
     ],
     "ios": {
-      "supportsTablet": true
+      "supportsTablet": true,
+      "bundleIdentifier": "com.anonymous.react-native-gym-tracker-app"
     },
     "android": {
       "adaptiveIcon": {
@@ -24,7 +26,14 @@
       }
     },
     "web": {
-      "favicon": "./assets/favicon.png"
-    }
+      "favicon": "./assets/favicon.png",
+      "bundler": "metro"
+    },
+    "experiments": {
+      "tsconfigPaths": false
+    },
+    "plugins": [
+      "expo-router"
+    ]
   }
 }
