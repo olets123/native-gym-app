@@ -9,12 +9,12 @@ import { getFirestore } from "firebase/firestore";
 // For Firebase JS SDK v7.20.0 and later, measurementId is optional
 const firebaseConfig = {
   apiKey: process.env.REACT_APP_API_KEY,
-  authDomain: "react-gym-tracker-app.firebaseapp.com",
-  projectId: "react-gym-tracker-app",
-  storageBucket: "react-gym-tracker-app.appspot.com",
-  messagingSenderId: "766382918583",
-  appId: "1:766382918583:web:1c2ddea126f8cff9ccb632",
-  measurementId: "G-2Y9ZZKGG8J"
+  authDomain: process.env.REACT_APP_AUTH_DOMAIN,
+  projectId: process.env.REACT_APP_PROJECT_ID,
+  storageBucket: process.env.REACT_APP_STORAGE_BUCKET,
+  messagingSenderId: process.env.REACT_APP_MESSAGE_SENDER_ID,
+  appId: process.env.REACT_APP_APP_ID,
+  measurementId: process.env.REACT_APP_MEASUREMENT_ID
 };
 
 // Initialize Firebase
